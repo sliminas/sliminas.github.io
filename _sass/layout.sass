@@ -1,0 +1,56 @@
+$grey: #c6c6c6
+$light-grey: lightgrey
+
+*
+  box-sizing: border-box
+
+body
+  margin: 0
+
+.nav, .footer
+  padding: 0 1rem
+
+.nav
+  border-bottom: 1px solid $light-grey
+
+.footer
+  border-top: 1px solid $light-grey
+
+.nav__items
+  margin: 0
+  list-style: none
+  padding: 0
+  display: flex
+  width: 100%
+
+.footer__items
+  display: flex
+  flex-wrap: wrap
+
+.nav-item, .footer-item
+  padding: 1rem
+
+  text-decoration: none
+  color: black
+
+  &:hover
+    background-color: $grey
+
+  &--active
+    background-color: $light-grey
+
+    &:hover
+      background-color: $grey
+
+.footer-item__icon
+  vertical-align: text-top
+  height: 15px
+  margin-right: 5px
+
+.content
+  margin: 2rem 1rem
+
+.container
+  max-width: 768px
+  width: 100%
+  margin: 0 auto

@@ -1,0 +1,16 @@
+<nav class="nav">
+  <div class="container">
+    <ul class="nav__items">
+      {% for item in site.data.nav %}
+        {% unless item.disabled %}
+        <a href="{{ item.link }}" class="nav-item {% if page.url == item.link %}{{ "nav-item--active" }}{% endif %}">
+          <li>
+            {{ item.name }}
+          </li>
+        </a>
+
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </div>
+</nav>
